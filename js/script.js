@@ -1,3 +1,43 @@
+// BURGERMENU
+const navslide = () => {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-links');
+  const navLinks = document.querySelectorAll('.nav-links li');
+
+  function toggleBurger() {
+      //Toggle Nav
+      nav.classList.toggle('nav-active');
+
+      //Animate Links
+      navLinks.forEach((link, index) => {
+          if (link.style.animation) {
+              link.style.animation = ''
+          } else {
+              link.style.animation = `navLinkFade 0.3s ease forwards ${index / 7 + 0.3}s`;
+          }
+      });
+
+      //Burger Animation
+      burger.classList.toggle('toggle');
+  }
+
+  burger.addEventListener('click', () => {
+      toggleBurger();
+  });
+
+  nav.addEventListener('click', () => {
+      toggleBurger();
+  });
+
+}
+
+navslide();
+
+
+
+
+
+// PARRALAX EFFECT
 let controller = new ScrollMagic.Controller();
 let timeline = new TimelineMax();
 
@@ -17,11 +57,12 @@ timeline
   .fromTo(".content-images", { opacity: 0 }, { opacity: 1, duration: 3 })
   .fromTo(".text", { opacity: 0 }, { opacity: 1, duration: 3 });
 
-let scene = new ScrollMagic.Scene({
-  triggerElement: "section",
-  duration: "300%",
-  triggerHook: 0,
-})
-  .setTween(timeline)
-  .setPin("section")
-  .addTo(controller);
+  let scene = new ScrollMagic.Scene({
+    triggerElement: "section",
+    duration: "300%",
+    triggerHook: 0,
+  })
+    .setTween(timeline)
+    .setPin("section")
+    .addTo(controller);
+  
