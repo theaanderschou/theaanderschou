@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  cursor: pointer;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 2rem 10rem;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  z-index: 10;
+}
+
+.logo {
+  width: 100px;
+}
+
+.container {
+  height: 100vh;
+}
+
+.container img {
+  width: 100%;
+  position: absolute;
+  height: 110vh;
+  z-index: -1;
+}
+
+.drawings img{
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.god {
+  transform: translate(10%, -20%);
+}
+
+.like {
+  transform: translate(70%, 20%);
+}
+
+.fish {
+  transform: translate(25%, 50%);
+}
+
+.gun {
+  transform: translate(5%, 70%);
+}
+
+.shadow {
+  transform: translate(-30%, 5%);
+}
+
+/*
+.femur {
+  transform: rotate(5deg) translate(-30%, 40%);
+}
+
+.fight {
+  transform: translate(20%, 70%);
+}
+*/
+
+.main-title {
+  position: absolute;
+  top: 35%;
+  left: 60%;
+  font-size: 2rem;
+  transform: translate(-73%, 5%);
+  color: rgb(243, 203, 170);
+}
+
+.undertitle {
+  position: absolute;
+  width: 70%;
+  top: 35%;
+  left: 72%;
+  font-size: 4rem;
+  transform: translate(-73%, 5%);
+  color: rgb(247, 223, 203);
+}
+
+.content {
+  width: 100%;
+  margin-top: 80px;
+  background: rgb(24, 24, 24);
+  min-height: 100vh;
+  z-index: 2;
+  position: absolute;
+}
+
+.content-images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 60vh;
+  text-align: center;
+}
+
+.text {
+  padding: 2rem 20rem;
+  font-size: 1.1rem;
+}
