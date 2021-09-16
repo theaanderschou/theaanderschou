@@ -13,7 +13,7 @@ const navslide = () => {
           if (link.style.animation) {
               link.style.animation = ''
           } else {
-              link.style.animation = `navLinkFade 0.3s ease forwards ${index / 7 + 0.3}s`;
+              link.style.animation = `navLinkFade 0.5s ease forwards ${index / 4 + 0.4}s`;
           }
       });
 
@@ -54,8 +54,11 @@ timeline
 //  .to(".femur", 10, { y: -100 }, "-=10")
   .fromTo(".bg1", { y: -50 }, { y: 0, duration: 10 }, "-=10")
   .to(".content", 10, { top: "0%" }, "-=10")
-  .fromTo(".content-images", { opacity: 0 }, { opacity: 1, duration: 3 })
-  .fromTo(".text", { opacity: 0 }, { opacity: 1, duration: 3 });
+//  .fromTo(".content-images", { opacity: 0 }, { opacity: 1, duration: 3 })
+//  .fromTo(".text", { opacity: 0 }, { opacity: 1, duration: 3 });
+
+  // BRUG OPACITY PÅ ALLE IMG'ER, SÅ DE FADER IND
+
 
   let scene = new ScrollMagic.Scene({
     triggerElement: "section",
