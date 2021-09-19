@@ -4,6 +4,8 @@
   box-sizing: border-box;
   color: #000;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+
 }
 
 a {
@@ -263,26 +265,26 @@ nav {
 
 .main-title {
   position: absolute;
-  top: 35%;
-  left: 60%;
+  top: 32%;
+  left: 43%;
   transform: translate(-73%, 5%);
   font-size: 2rem;
-  color: rgb(243, 203, 170);
+  color: #E6CCB2;
 }
 
 .undertitle {
   position: absolute;
   width: 70%;
   top: 35%;
-  left: 72%;
+  left: 71%;
   font-size: 4rem;
   transform: translate(-73%, 5%);
-  color: rgb(247, 223, 203);
+  color: #E6CCB2;
 }
 
 .content {
   width: 100%;
-  margin-top: 80px;
+  margin-top: 200px;
   background: rgb(24, 24, 24);
   min-height: 100vh;
   z-index: 2;
