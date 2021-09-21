@@ -24,6 +24,7 @@ nav {
   position: fixed;
   font-size: 8px;
   background-color: #fff;
+  overflow: hidden;
 }
 
 .nav-links {
@@ -148,19 +149,11 @@ nav {
       vertical-align: middle;
       text-align: center;
   }
-<<<<<<< HEAD
 
   .nav-active li:hover {
       background: #c8d1d7;
   }
 
-=======
-
-  .nav-active li:hover {
-      background: #c8d1d7;
-  }
-
->>>>>>> parent of fc06cfa... nav might be finished
   .nav-links li:hover a {
       color: black;
       font-weight: 700;
@@ -231,7 +224,6 @@ nav {
 
 
 
-
 .container {
   height: 100vh;
 }
@@ -281,19 +273,11 @@ nav {
 
 .main-title {
   position: absolute;
-<<<<<<< HEAD
   top: 32%;
   left: 43%;
   transform: translate(-73%, 5%);
   font-size: 2rem;
   color: #E6CCB2;
-=======
-  top: 35%;
-  left: 60%;
-  font-size: 2rem;
-  transform: translate(-73%, 5%);
-  color: rgb(243, 203, 170);
->>>>>>> parent of fc06cfa... nav might be finished
 }
 
 .undertitle {
