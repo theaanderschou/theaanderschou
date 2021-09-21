@@ -12,9 +12,6 @@ a {
   cursor: pointer;
 }
 
-
-
-
 /* Nav Bar Section */
 nav {
   display: flex;
@@ -23,15 +20,10 @@ nav {
   width: 100%;
   height: 8vh;
   margin: 0;
-  z-index: 3;
+  z-index: 2;
   position: fixed;
   font-size: 8px;
   background-color: #fff;
-}
-
-.nav-div {
-  display: block;
-  width: 20%;
 }
 
 .nav-links {
@@ -44,10 +36,11 @@ nav {
 
 .nav-links li {
   width: 100%;
-  display: block;
+  display: flex;
   text-align: center;
-  text-transform: uppercase;
+  margin: 0 30px 0 30px;
   z-index: 0;
+  padding-bottom: 12px;
 }
 
 .nav-links li a {
@@ -56,12 +49,8 @@ nav {
   overflow-x: hidden;
 }
 
-.nav-links li:hover a {
-  font-weight: 700;
-}
-
-.some-link:hover img {
-  width: 25px;
+.nav-links li:hover {
+  border-bottom: 1px solid black;
 }
 
 .nav-links a {
@@ -78,44 +67,42 @@ nav {
 }
 
 .burger div {
-  width: 20px;
-  height: 1px;
-  background-color: #000;
-  margin: 8px;
+  width: 25px;
+  height: 2px;
+  background-color: #000000;
+  margin: 7px;
   transition: all 0.3s ease;
 }
 
-.some-link {
-  display: flex;
-  justify-content: space-around;
-}
-
-.some-link img {
-  width: 22px;
-  position: relative;
-  top: 10%;
-}
 
 @media only screen and (max-width: 1100px) {
   body {
       overflow-x: hidden;
   }
 
-  .nav-div {
-    display: block;
-    width: 100%;
+  .logo {
+      display: flex;
+      flex: 2;
+      width: 300px;
+      margin-left: 3%;
+  }
+
+  .logo img {
+      width: 300px;
   }
 
   .nav-links {
       position: absolute;
-      height: 100vh;
-      top: 8vh;
+      right: 0px;
+      height: 87vh;
+      top: 10vh;
       display: flex;
       flex-direction: column;
-      width: 100vw;
-      transform: translateX(200%);
-      transition: 0.8s ease-in-out;
-      font-size: 8px;
+      align-items: center;
+      width: 50%;
+      transform: translateX(104%);
+      transition: 0.5s ease-in;
+      font-size: 0.875rem;
       overflow-x: hidden;
   }
 
@@ -124,25 +111,32 @@ nav {
       width: 100%;
       transition: 0.2s;
       display: table;
-      height: 6vh;
+      height: 14vh;
       overflow-x: hidden;
-    }
+  }
+
+  .nav-links li:hover {
+      border-bottom: none;
+  }
 
   .nav-links a {
       color: black;
-      width: 100%;
+      width: 80%;
       display: none;
   }
 
   .burger {
       display: table-cell;
-      margin-right: 60px;
+      vertical-align: middle;
+      text-align: center;
+      margin-right: 5%;
+
   }
 
   .nav-active {
-      transform: translateX(1%);
-      background-color: #fff;
-      opacity: 0.9;
+      transform: translateX(4%);
+      background-color: #ced8df;
+      border: 1px #1111110e solid;
       z-index: 3;
   }
 
@@ -150,14 +144,19 @@ nav {
       display: block;
       width: 100%;
       height: 100%;
-    }
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+  }
 
-    .nav-active li {
-      position: relative;
-      top: 25%;
-      margin: 0 30px;
-      transform: translateY(50%);
-    }
+  .nav-active li:hover {
+      background: #c8d1d7;
+  }
+
+  .nav-links li:hover a {
+      color: black;
+      font-weight: 700;
+  }
 
   @keyframes navLinkFade {
       from {
@@ -181,6 +180,13 @@ nav {
 }
 
 @media only screen and (max-width: 500px) {
+  .logo {
+      margin-left: 6%;
+  }
+
+  .logo img {
+      width: 250px;
+  }
 
   .nav-active {
       width: 100%;
@@ -202,15 +208,17 @@ nav {
 
 /* Logo */
 .logo {
-  position: fixed;
-  margin-top: 10px;
-  margin-left: 60px;
-  z-index: 3;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 100px;
+  z-index: 2;
 }
 
 .logo img {
-  width: 50px;
+  width: 80px;
 }
+    /* HUSK LOGO CLASSES STADIG LIGGER UNDER NAV! */
+
 /* End of Logo */
 
 
@@ -265,11 +273,19 @@ nav {
 
 .main-title {
   position: absolute;
+<<<<<<< HEAD
   top: 32%;
   left: 43%;
   transform: translate(-73%, 5%);
   font-size: 2rem;
   color: #E6CCB2;
+=======
+  top: 35%;
+  left: 60%;
+  font-size: 2rem;
+  transform: translate(-73%, 5%);
+  color: rgb(243, 203, 170);
+>>>>>>> parent of fc06cfa... nav might be finished
 }
 
 .undertitle {
