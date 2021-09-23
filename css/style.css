@@ -203,7 +203,17 @@ nav {
         height: 12vh;
     }
 }
+
+.nav-box {
+    width: 100%;
+    height: 8vh;
+    background-color: #fff;
+    position: fixed;
+}
 /* END OF NAV SECTION */
+
+
+
 
 
 /* LOGO SECTION */
@@ -221,8 +231,101 @@ nav {
 /* END OF LOGO SECTION */
 
 
-section {
-    background-color: #cdcdcd;
-    height: 200vh;
+
+
+
+/* HERO SECTION */
+
+
+
+
+
+.container {
+    height: 100vh;
+  }
+  
+  .container img {
     width: 100%;
-}
+    position: absolute;
+    height: 110vh;
+    z-index: -1;
+  }
+  
+  .drawings img{
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+  }
+  
+  .god {
+    transform: translate(10%, -20%);
+  }
+  
+  .like {
+    transform: translate(70%, 20%);
+  }
+  
+  .fish {
+    transform: translate(25%, 50%);
+  }
+  
+  .gun {
+    transform: translate(5%, 70%);
+  }
+  
+  .shadow {
+    transform: translate(-30%, 5%);
+  }
+  
+  /*
+  .femur {
+    transform: rotate(5deg) translate(-30%, 40%);
+  }
+  
+  .fight {
+    transform: translate(20%, 70%);
+  }
+  */
+  
+  .main-title {
+    position: absolute;
+    width: 70%;
+    top: 35%;
+    left: 71%;
+    font-size: 2rem;
+    transform: translate(-73%, 5%);
+    color: #E6CCB2;
+  }
+  
+  .undertitle {
+    position: absolute;
+    width: 70%;
+    top: 35%;
+    left: 71%;
+    font-size: 4rem;
+    transform: translate(-73%, 5%);
+    color: #E6CCB2;
+  }
+  
+  .content {
+    width: 100%;
+    margin-top: 80px;
+    background: rgb(24, 24, 24);
+    min-height: 100vh;
+    z-index: 2;
+    position: absolute;
+  }
+  
+  .content-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 60vh;
+    text-align: center;
+  }
+  
+  .text {
+    padding: 2rem 20rem;
+    font-size: 1.1rem;
+  }  
+/* END OF HERO SECTION */
