@@ -1,313 +1,223 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: #000;
-  font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 
+/* FUNDAMENTALS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #fff;
+    scroll-behavior: smooth;
+    line-height: 1.65;
+    overflow-x: hidden;
 }
 
 a {
-  cursor: pointer;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
 
-/* Nav Bar Section */
+
+
+
+/* NAV SECTION */
 nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 8vh;
-  margin: 0;
-  z-index: 2;
-  position: fixed;
-  font-size: 8px;
-  background-color: #fff;
-  overflow: hidden;
-}
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 8vh;
+    margin: 0;
+    z-index: 2;
+    position: fixed;
+    left: 20%;
+    font-size: 8px;
+    background-color: #fff;
+  }
 
 .nav-links {
-  width: 60%;
-  height: 8vh;
-  display: flex;
-  overflow-x: hidden;
-  align-items: center;
+    width: 100%;
+    height: 6vh;
+    display: table;
+    overflow-x: hidden;
+    text-align: center;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 60px;
 }
 
 .nav-links li {
-  width: 100%;
-  display: flex;
-  text-align: center;
-  margin: 0 30px 0 30px;
-  z-index: 0;
-  padding-bottom: 12px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 24%;
+    z-index: 0;
+    padding: 0 10px;
 }
 
 .nav-links li a {
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 .nav-links li:hover {
-  border-bottom: 1px solid black;
+    font-weight: 600;
 }
 
-.nav-links a {
-  color: #000000;
-  text-decoration: none;
-  letter-spacing: 3px;
-  width: 100%;
-  height: 100%;
+.some-links img {
+    width: 20px;
+}
+
+.some-links:hover img {
+    opacity: 0.4;
 }
 
 .burger {
-  display: none;
-  cursor: pointer;
+    display: none;
+    cursor: pointer;
 }
 
 .burger div {
-  width: 25px;
-  height: 2px;
-  background-color: #000000;
-  margin: 7px;
-  transition: all 0.3s ease;
+    width: 25px;
+    height: 2px;
+    background-color: #000000;
+    margin: 7px;
+    transition: all 0.3s ease;
 }
 
-
 @media only screen and (max-width: 1100px) {
-  body {
-      overflow-x: hidden;
-  }
+    body {
+        overflow-x: hidden;
+    }
 
-  .logo {
-      display: flex;
-      flex: 2;
-      width: 300px;
-      margin-left: 3%;
-  }
-
-  .logo img {
-      width: 300px;
-  }
-
-  .nav-links {
-      position: absolute;
-      right: 0px;
-      height: 87vh;
-      top: 10vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 50%;
-      transform: translateX(104%);
-      transition: 0.5s ease-in;
-      font-size: 0.875rem;
-      overflow-x: hidden;
-  }
-
-  .nav-links li {
-      opacity: 0;
-      width: 100%;
-      transition: 0.2s;
-      display: table;
-      height: 14vh;
-      overflow-x: hidden;
-  }
-
-  .nav-links li:hover {
-      border-bottom: none;
-  }
-
-  .nav-links a {
-      color: black;
-      width: 80%;
-      display: none;
-  }
-
-  .burger {
-      display: table-cell;
-      vertical-align: middle;
-      text-align: center;
-      margin-right: 5%;
-
-  }
-
-  .nav-active {
-      transform: translateX(4%);
-      background-color: #ced8df;
-      border: 1px #1111110e solid;
-      z-index: 3;
-  }
-
-  .nav-active a {
-      display: block;
-      width: 100%;
-      height: 100%;
-      display: table-cell;
-      vertical-align: middle;
-      text-align: center;
-  }
-
-  .nav-active li:hover {
-      background: #c8d1d7;
-  }
-
-  .nav-links li:hover a {
-      color: black;
-      font-weight: 700;
-  }
-
-  @keyframes navLinkFade {
-      from {
-          opacity: 0;
-          transform: translateX(50px);
+    nav {
+        width: 100%;
+        left: 0%;
+        justify-content: flex-end;
       }
 
-      to {
-          opacity: 1;
-          transform: translateX(0px);
-      }
-  }
+    .nav-links {
+        position: absolute;
+        height: 92vh;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(0%);
+        transition: 0.5s ease-in-out;
+        font-size: 8px;
+        overflow-x: hidden;
+    }
 
-  .toggle .line1 {
-      transform: rotate(-45deg) translate(-2px, 4.5px);
-  }
+    .nav-links li {
+        opacity: 0;
+        width: 100%;
+        transition: 0.2s;
+        display: table;
+        height: 6vh;
+        overflow-x: hidden;
+        position: relative;
+        top: 30%;
+    }
 
-  .toggle .line2 {
-      transform: rotate(45deg) translate(-2px, -4.5px);
-  }
+    .nav-links a {
+        color: black;
+        width: 80%;
+        display: none;
+    }
+
+    .some-links {
+        left: 0px;
+    }
+
+    .burger {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        margin-right: 60px;
+    }
+
+    .nav-active {
+        /*transform: translateX(0%);*/
+        background-color: #fff;
+        z-index: 3;
+    }
+
+    .nav-active a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .nav-links li:hover a {
+        font-weight: 600;
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-2px, 4.5px);
+    }
+
+    .toggle .line2 {
+        transform: rotate(45deg) translate(-2px, -4.5px);
+    }
 }
 
 @media only screen and (max-width: 500px) {
-  .logo {
-      margin-left: 6%;
-  }
+    .logo {
+        margin-left: 6%;
+    }
 
-  .logo img {
-      width: 250px;
-  }
+    .logo img {
+        width: 250px;
+    }
 
-  .nav-active {
-      width: 100%;
-      transform: translateX(2%);
-  }
+    .nav-active {
+        width: 100%;
+        transform: translateX(2%);
+    }
 
-  .nav-links {
-      height: 75vh;
-  }
+    .nav-links {
+        height: 75vh;
+    }
 
-  .nav-links li {
-      height: 12vh;
-  }
+    .nav-links li {
+        height: 12vh;
+    }
 }
-
-/* End of Nav Bar Section */
-
-
-
-/* Logo */
-.logo {
-  position: absolute;
-  margin-top: 20px;
-  margin-left: 100px;
-  z-index: 2;
-}
-
-.logo img {
-  width: 80px;
-}
-    /* HUSK LOGO CLASSES STADIG LIGGER UNDER NAV! */
-
-/* End of Logo */
+/* END OF NAV SECTION */
 
 
 
-.container {
-  height: 100vh;
-}
-
-.container img {
-  width: 100%;
-  position: absolute;
-  height: 110vh;
-  z-index: -1;
-}
-
-.drawings img{
-  width: 70%;
-  height: 70%;
-  object-fit: cover;
-}
-
-.god {
-  transform: translate(10%, -20%);
-}
-
-.like {
-  transform: translate(70%, 20%);
-}
-
-.fish {
-  transform: translate(25%, 50%);
-}
-
-.gun {
-  transform: translate(5%, 70%);
-}
-
-.shadow {
-  transform: translate(-30%, 5%);
-}
-
-/*
-.femur {
-  transform: rotate(5deg) translate(-30%, 40%);
-}
-
-.fight {
-  transform: translate(20%, 70%);
-}
-*/
-
-.main-title {
-  position: absolute;
-  top: 32%;
-  left: 43%;
-  transform: translate(-73%, 5%);
-  font-size: 2rem;
-  color: #E6CCB2;
-}
-
-.undertitle {
-  position: absolute;
-  width: 70%;
-  top: 35%;
-  left: 71%;
-  font-size: 4rem;
-  transform: translate(-73%, 5%);
-  color: #E6CCB2;
-}
-
-.content {
-  width: 100%;
-  margin-top: 200px;
-  background: rgb(24, 24, 24);
-  min-height: 100vh;
-  z-index: 2;
-  position: absolute;
-}
-
-.content-images {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 60vh;
-  text-align: center;
-}
-
-.text {
-  padding: 2rem 20rem;
-  font-size: 1.1rem;
+section {
+    background-color: #cdcdcd;
+    height: 200vh;
+    width: 100%;
 }
