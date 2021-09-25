@@ -130,7 +130,7 @@ nav {
       height: 6vh;
       overflow-x: hidden;
       position: relative;
-      top: 30%;
+      top: 20%;
   }
 
   .nav-links a {
@@ -194,19 +194,11 @@ nav {
   .burger {
       margin-right: 12%;
     }
-
-    .nav-links li {
-      top: 20%;
-  }
 }
 
 @media only screen and (max-width: 500px) {
   .nav-active {
       width: 100%;
-  }
-
-  .nav-links {
-      height: 75vh;
   }
 
   .burger {
