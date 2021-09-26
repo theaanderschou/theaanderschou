@@ -281,41 +281,43 @@ nav {
   .fish {
     width: 25vw;
     height: 45%;
-    top: -100%;
+    top: -80%;
     left: 235%;
   }
   
   .shadow {
-    width: 15vw;
+    width: 20vw;
     height: 45%;
-    top: -250%;
-    left: 45%;
+    top: -220%;
+    left: 10%;
   }
   
   .gun {
-    width: 45vw;
+    width: 40vw;
     height: 45%;
-    top: -290%;
-    left: 25%;
+    position: absolute;
+    top: 38%;
+    left: 10%;
+    z-index: 4;
   }
 
   .main-title {
     position: absolute;
     width: auto;
-    margin-top: 20%;
-    left: 60%;
+    top: 32%;
+    left: 25%;
     font-size: 2rem;
     color: #E6CCB2;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    z-index: 4;
+    z-index: 1;
     }
   
   .undertitle {
     position: absolute;
     width: auto;
-    margin-top: 22%;
-    left: 60%;
+    top: 34%;
+    left: 25%;
     font-size: 4rem;
     color: #E6CCB2;
     font-family: 'Montserrat', sans-serif;
@@ -323,7 +325,174 @@ nav {
     z-index: 4;
     }
   
-    @media only screen and (max-width: 1660px) {
+    @media only screen and (max-width: 1630px) {
+      .container {
+        height: 90vh;
+      }
+      
+      .main-title {
+        top: 32%;
+        left: 24%;
+        }
+      
+      .undertitle {
+        top: 34%;
+        left: 24%;
+        font-size: 3.6rem;
+        }
+    }
+
+    @media only screen and (max-width: 1280px) {
+      .container {
+        height: 85vh;
+      }
+      
+      .main-title {
+        top: 33%;
+        font-size: 1.6rem;
+        }
+      
+      .undertitle {
+        top: 36%;
+        font-size: 2.8rem;
+        }
+    }
+
+    @media only screen and (max-width: 1140px) {
+      .container {
+        height: 75vh;
+      }
+      
+      .main-title {
+        font-size: 1.2rem;
+        }
+
+      .gun {
+        width: 35vw;
+        top: 44%;
+        left: 13%;
+      }
+    }
+
+    @media only screen and (max-width: 980px) {
+      .container {
+        height: 70vh;
+      }
+      
+      .main-title {
+        top: 35%;
+        }
+      
+      .undertitle {
+        top: 38%;
+        font-size: 2.2rem;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+      .container {
+        height: 65vh;
+      }
+      
+      .main-title {
+        top: 30%;
+        }
+      
+      .undertitle {
+        top: 34%;
+        }
+
+      .fish {
+        top: -70%;
+      }
+    }
+
+    @media only screen and (max-width: 800px) {
+      .container {
+        height: 55vh;
+      }
+      
+      .main-title {
+        top: 32%;
+        }
+      
+      .undertitle {
+        top: 36%;
+        font-size: 1.8rem;
+        }
+
+      .fish {
+        top: -70%;
+      }
+    }
+
+    @media only screen and (max-width: 700px) {
+      .main-title {
+        top: 34%;
+        }
+      
+      .undertitle {
+        top: 40%;
+        font-size: 1.8rem;
+        }
+
+        .fish {
+          top: -50%;
+          left: 255%;
+        }     
+        
+        .gun {
+          width: 45vw;
+          top: 44%;
+          left: 10%;
+        }
+    }
+
+    @media only screen and (max-width: 414px) {
+      .container {
+        height: 40vh;
+      }
+
+      .main-title {
+        top: 38%;
+        font-size: 1rem;
+        }
+      
+      .undertitle {
+        top: 44%;
+        font-size: 1.3rem;
+        }
+
+        .god {
+          width: 80vw;
+          left: 12%;
+          top: 26%;
+        }
+        
+        .like {
+          width: 12vw;
+          top: -30%;
+          left: 685%;
+        }
+        
+        .fish {
+          width: 35vw;
+          top: -50%;
+          left: 185%;
+        }
+        
+        .shadow {
+          width: 22vw;
+          height: 45%;
+          top: -200%;
+          left: 2%;
+        }
+        
+        .gun {
+          width: 60vw;
+          top: 50%;
+          left: 3%;
+        }
       
     }
 
@@ -332,7 +501,7 @@ nav {
     margin-top: 80px;
     background: rgb(24, 24, 24);
     min-height: 100vh;
-    z-index: 2;
+    z-index: 4;
     position: absolute;
   }
   

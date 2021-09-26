@@ -49,8 +49,8 @@ timeline
   .to(".like", 10, { y: -200 }, "-=10")
   .to(".shadow", 10, { y: -400 }, "-=10")
 
-  .to(".main-title", 10, { y: -600 }, "-=10")
-  .to(".undertitle", 10, { y: -600 }, "-=10")
+  .to(".main-title", 10, { y: -300 }, "-=10")
+  .to(".undertitle", 10, { y: -300 }, "-=10")
 
   .fromTo(".bg1", { y: -50 }, { y: 0, duration: 10 }, "-=10")
   .to(".content", 10, { top: "0%" }, "-=10")
