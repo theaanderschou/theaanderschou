@@ -495,12 +495,28 @@ nav {
         }
       
     }
+/* END OF HERO SECTION */
 
+
+
+
+
+
+/* PROJECT OVERVIEW */
+#overview {
+  height: 20vh;
+  width: 100%;
+  background-color: pink;
+}
+
+
+
+/*
   .content {
     width: 100%;
+    height: 200vh;
     margin-top: 80px;
-    background: rgb(24, 24, 24);
-    min-height: 100vh;
+    background: #333;
     z-index: 4;
     position: absolute;
   }
@@ -517,4 +533,16 @@ nav {
     padding: 2rem 20rem;
     font-size: 1.1rem;
   }  
-/* END OF HERO SECTION */
+/* PROJECT OVERVIEW */
+
+
+
+/* CV PAGE */
+embed {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+/* CV PAGE */
+
