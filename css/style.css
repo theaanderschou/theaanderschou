@@ -519,8 +519,8 @@ nav {
 
 /* PROJECT OVERVIEW */
 .project-overview {
-  width: auto%;
-  height: 500vh;
+  width: auto;
+  height: 200vh;
   margin: 80px;
   background-color: orange;
 }
