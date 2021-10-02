@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
 
 /* FUNDAMENTALS */
 * {
@@ -8,7 +8,7 @@
 }
 
 html {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Montserrat', sans-serif;    
     height: 100%;
     overflow-x: hidden;
 }
@@ -35,7 +35,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   width: 70%;
-  height: 8vh;
+  height: 6vh;
   margin: 0;
   z-index: 6;
   position: fixed;
@@ -45,7 +45,7 @@ nav {
 
 .nav-bg {
   width: 100%;
-  height: 8vh;
+  height: 6vh;
   margin: 0;
   z-index: 5;
   position: fixed;
@@ -118,8 +118,8 @@ nav {
 
   .nav-links {
       position: absolute;
-      height: 92vh;
-      top: 8vh;
+      height: 94vh;
+      top: 6vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -219,7 +219,7 @@ nav {
 /* LOGO SECTION */
 .logo {
   position: fixed;
-  height: 8vh;
+  height: 6vh;
   padding: 8px 5px;
   margin-left: 8%;
   z-index: 5;
@@ -256,8 +256,8 @@ nav {
 /* HERO SECTION */
 #hero {
   height: auto;
-  width: 100%;
-  margin-top: 3%;
+  width: 90%;
+  margin: 3% auto 0 auto;
 }
 
 .hero-pic img {
@@ -273,24 +273,88 @@ nav {
 /* PROJECT OVERVIEW */
 #project-overview {
   width: auto;
-  height: 100vh;
+  height: auto;
   background-color: rgb(245, 245, 245);
 }
 
 .project-overview {
   width: auto;
-  height: 100vh;
-  margin: 20px 20%;
+  height: auto;
+  margin: 20px 10%;
   background-color: rgb(250, 237, 237);
 }
 
 .proj-pics {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.freund-overview {
+  width: 100%;
+  display: flex;
+  background-color: orange;
+}
+
+.freund-ov-pic {
+  width: 60%;
+  height: auto;
+  float: left;
+  background-color: lightblue;
+}
+
+.freund-ov-text {
+  width: 40%;
+  height: 12vh;
+  float: right;
+  margin: auto;
+  padding: 0 8%;
+  background-color: palegoldenrod;
+}
+
+.td-overview {
+  width: 100%;
+  display: flex;
+  background-color: orange;
+}
+
+.td-ov-pic {
+  width: 60%;
+  height: auto;
+  float: right;
+  background-color: lightblue;
+}
+
+.td-ov-text {
+  width: 40%;
+  height: 12vh;
+  float: left;
+  margin: auto;
+  padding: 0 8%;
+  background-color: palegoldenrod;
+}
+
+/*
+.proj-text {
   width: 40%;
   height: auto;
+  padding: 8%;
+}
+
+.proj-h2 {
+  font-weight: 400;
+}
+
+.proj-p {
+  font-weight: 300;
 }
 
 .proj1, .proj3 {
   float: left;
+}
+
+.proj1-text, .proj3-text {
+  float: right;
 }
 
 .proj2, .proj4 {
@@ -298,7 +362,7 @@ nav {
 }
 
 .proj1 img, .proj2 img {
-  width: 100%;
+  width: 60%;
   height: auto;
   object-fit: cover;
 }
