@@ -256,7 +256,7 @@ nav {
 /* HERO SECTION */
 #hero {
   height: auto;
-  width: 90%;
+  width: 100%;
   margin: 3% auto 0 auto;
 }
 
@@ -311,7 +311,7 @@ nav {
 .td-overview {
   width: 100%;
   display: flex;
-}
+  margin: 40px 0;}
 
 .td-ov-pic {
   width: 60%;
@@ -322,7 +322,7 @@ nav {
 .td-ov-text {
   width: 40%;
   height: 12vh;
-  float: left;
+  float: right;
   margin: auto;
   padding: 0 8%;
 }
