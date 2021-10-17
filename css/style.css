@@ -1,4 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap'); 
+
+@font-face {
+  font-family: sangbleu;
+  src: url(../fonts/SangBleuKingdom-Air.otf);
+}
+
+@font-face {
+  font-family: sangbleulight;
+  src: url(../fonts/SangBleuKingdom-Light.otf);
+}
+
+@font-face {
+  font-family: sangbleuregular;
+  src: url(../fonts/SangBleuKingdom-Regular.otf);
+}
 
 /* FUNDAMENTALS */
 * {
@@ -8,7 +23,7 @@
 }
 
 html {
-    font-family: 'Montserrat', sans-serif;    
+    font-family: 'Roboto', sans-serif;
     height: 100%;
     overflow-x: hidden;
 }
@@ -35,7 +50,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   width: 70%;
-  height: 6vh;
+  height: 8vh;
   margin: 0;
   z-index: 6;
   position: fixed;
@@ -45,7 +60,7 @@ nav {
 
 .nav-bg {
   width: 100%;
-  height: 6vh;
+  height: 8vh;
   margin: 0;
   z-index: 5;
   position: fixed;
@@ -54,7 +69,7 @@ nav {
 
 .nav-links {
   width: 100%;
-  height: 6vh;
+  height: 8vh;
   display: table;
   overflow-x: hidden;
   text-align: center;
@@ -118,13 +133,13 @@ nav {
 
   .nav-links {
       position: absolute;
-      height: 94vh;
-      top: 6vh;
+      height: 92vh;
+      top: 8vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%;
-      transform: translateX(0%);
+      transform: translateX(100%);
       transition: 0.5s ease-in-out;
       font-size: 8px;
       overflow-x: hidden;
@@ -160,6 +175,7 @@ nav {
   }
 
   .nav-active {
+    transform: translateX(0%);
       background-color: #fff;
       z-index: 3;
   }
@@ -219,7 +235,7 @@ nav {
 /* LOGO SECTION */
 .logo {
   position: fixed;
-  height: 6vh;
+  height: 8vh;
   padding: 8px 5px;
   margin-left: 8%;
   z-index: 5;
@@ -249,22 +265,165 @@ nav {
 
 
 
-
-
-
-
 /* HERO SECTION */
 #hero {
-  height: auto;
+  height: 100vh;
   width: 100%;
-  margin: 3% auto 0 auto;
 }
 
-.hero-pic img {
+.hero-pic {
+  background-image: url(/img/bw-closedeyes.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  position: absolute;
+  height: 100vh;
+  width: 60%;
+  display: flex;
+  float: left;
+  transition: .25s ease-in;
+}
+
+.hero-pic:hover {
+  background-image: url(/img/bw-openeyes.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  position: absolute;
+  height: 100vh;
+  width: 60%;
+  display: flex;
+  float: left;
+  transition: .25s ease-in;}
+
+.hero-textbox {
+  min-height: 100vh;
+  width: 50%;
+  display: flex;
+  float: right;
+  align-items: center;
+  position: absolute;
+  right: 0;
+}
+
+.hero-text {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 100px;
+}
+
+.hero-textbox h1 {
+  font-family: sangbleulight;
+  font-size: clamp(1.5rem, 5.5vw, 3.5rem); 
+}
+
+.hero-textbox p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: clamp(1.5rem, 2.8vw, 2.5rem); 
+}
+
+@media only screen and (max-width: 950px) {
+  .hero-pic {
+    background-image: url(/img/bw-closedeyes.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    float: none;
+    transition: .25s ease-in;
+  }
+
+  .hero-pic:hover {
+    background-image: url(/img/bw-openeyes.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    float: none;
+    transition: .25s ease-in;
+  }
+
+  .hero-textbox {
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    float: none;
+    align-items: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .hero-text {
+    margin-bottom: -100px;
+  }
+  
+}
+
+/* HERO SECTION */
+
+
+
+
+
+
+/* QUICK ABOUT SECTION */
+#quick-about {
+  height: auto;
+  background-color: rgb(248, 248, 248);
+}
+
+.quick-about {
+  display: flex;
   width: 100%;
   height: auto;
+  background-image: url(/img/bobby2.png);
+  background-size: 8%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
-/* HERO SECTION */
+
+.quick-about-text {
+  height: auto;
+  width: 50%;
+  margin: 0 auto;
+  padding: 12vh 100px 12vh 100px;
+}
+
+.quick-about-facts {
+  height: auto;
+  width: 50%;
+  margin: 0 auto;
+  padding: 12vh 100px 12vh 100px;
+}
+
+.quick-about h1 {
+  font-family: sangbleulight;
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem); 
+}
+
+.quick-about h2 {
+  font-family: sangbleulight;
+  font-size: clamp(1.5rem, 1.5vw, 2.5rem); 
+}
+
+.quick-about p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: clamp(0.5rem, 1.2vw, 1.5rem); 
+}
+/* QUICK ABOUT SECTION 
+
 
 
 
@@ -279,7 +438,7 @@ nav {
 .project-overview1, .project-overview2 {
   width: auto;
   height: auto;
-  margin: 20px 10%;
+  margin: 100px 10%;
 }
 
 .proj-pics {
@@ -369,12 +528,6 @@ nav {
 
 
 
-/* ABOUT ME HOME SECTION */
-
-/* ABOUT ME HOME SECTION */
-
-
-
 
 
 /* FOOTER 
@@ -386,6 +539,146 @@ footer {
 }
 
 /* FOOTER*/
+
+
+
+
+
+
+/* ABOUT PAGE */
+    /* ABOUT HERO SECTION */
+    #about-hero {
+      height: 60vh;
+      width: 100%;
+    }
+
+    .about-hero-pic {
+      background-image: url(/img/glancing.jpg);
+      background-size: 55%;
+      background-repeat: no-repeat;
+      background-position: right center;
+      position: absolute;
+      height: 60vh;
+      width: 100%;
+      display: flex;
+      float: right;
+      transition: .25s ease-in;
+    }
+
+    .about-hero-textbox {
+      min-height: 100vh;
+      width: 45%;
+      display: flex;
+      float: right;
+      align-items: center;
+      position: absolute;
+      left: 0;
+      z-index: 1;
+    }
+
+    .about-hero-text {
+      width: 100%;
+      text-align: left;
+      position: absolute;
+      top: 15%;
+    }
+
+    .about-hero-textbox h1 {
+      font-family: sangbleulight;
+      font-size: clamp(1.5rem, 5.5vw, 3.5rem); 
+      margin: 100px;
+    }
+
+    @media only screen and (max-width: 950px) {
+      .about-hero-pic {
+        background-image: url(/img/bw-closedeyes.png);
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        float: none;
+        transition: .25s ease-in;
+      }
+
+      .about-hero-textbox {
+        min-height: 60vh;
+        width: 100%;
+        display: flex;
+        float: none;
+        align-items: center;
+      }
+
+      .about-hero-text {
+        text-align: center;
+      }
+    }
+
+    @media only screen and (max-width: 750px) {
+      .about-hero-text {
+        margin-bottom: -100px;
+      }
+      
+    }
+
+    /* ABOUT HERO SECTION */
+
+
+
+
+    /* ABOUT SECTION */
+    #about {
+      height: auto;
+      background-color: rgb(248, 248, 248);
+    }
+    
+    .about {
+      display: flex;
+      width: 100%;
+      height: auto;
+      background-image: url(/img/bobby2.png);
+      background-size: 8%;
+      background-repeat: no-repeat;
+      background-position: right bottom;
+    }
+    
+    .about-text {
+      height: auto;
+      width: 50%;
+      margin: 0 auto;
+      padding: 12vh 100px 12vh 100px;
+    }
+    
+    .about-facts {
+      height: auto;
+      width: 50%;
+      margin: 0 auto;
+      padding: 12vh 100px 12vh 100px;
+    }
+    
+    .about h1 {
+      font-family: sangbleulight;
+      font-size: clamp(1.5rem, 3.5vw, 2.5rem); 
+    }
+    
+    .about h2 {
+      font-family: sangbleulight;
+      font-size: clamp(1.5rem, 1.5vw, 2.5rem); 
+    }
+    
+    .about p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: clamp(0.5rem, 1.2vw, 1.5rem); 
+    }
+    /* ABOUT SECTION */
+
+
+/* ABOUT PAGE */
+
+
 
 
 
