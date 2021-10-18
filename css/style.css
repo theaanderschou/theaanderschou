@@ -41,7 +41,27 @@ a {
     cursor: pointer;
 }
 
+h1 {
+  font-family: sangbleulight;
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem); 
+}
 
+h2 {
+  font-family: sangbleulight;
+  font-size: clamp(1.5rem, 1.5vw, 2.5rem); 
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: clamp(1rem, 1.0vw, 1.7rem); 
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: clamp(1rem, 1.2vw, 1.5rem); 
+}
 
 
 /* NAV SECTION */
@@ -638,10 +658,6 @@ footer {
       display: flex;
       width: 100%;
       height: auto;
-      background-image: url(/img/bobby2.png);
-      background-size: 8%;
-      background-repeat: no-repeat;
-      background-position: right bottom;
     }
     
     .about-text {
@@ -657,26 +673,60 @@ footer {
       margin: 0 auto;
       padding: 12vh 100px 12vh 100px;
     }
-    
-    .about h1 {
-      font-family: sangbleulight;
-      font-size: clamp(1.5rem, 3.5vw, 2.5rem); 
-    }
-    
-    .about h2 {
-      font-family: sangbleulight;
-      font-size: clamp(1.5rem, 1.5vw, 2.5rem); 
-    }
-    
-    .about p {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 300;
-      font-size: clamp(0.5rem, 1.2vw, 1.5rem); 
-    }
     /* ABOUT SECTION */
 
 
+
+
+
+    /* SKILLS SECTION */
+
+    /* SKILLS SECTION */
+
+
+
+
+    /* CV SECTION */
+    #cv {
+      height: auto;
+    }
+
+    .cv {
+      display: flex;
+      width: 100%;
+      height: auto;
+    }
+    
+    .education, .experience {
+      height: auto;
+      width: 50%;
+      margin: 0 auto;
+      padding: 12vh 100px 12vh 100px;
+    }
+    
+    .vertical-line {
+      width: 2px;
+      height: 500px;
+      background-color: #000000;
+      margin-top: 120px;
+      transition: all 0.3s ease;
+    }
+
+    .education h1, .experience h1 {
+      text-align: center;
+      margin-bottom: 3vh;
+    }
+
+    .cv-period {
+      color: #b4b4b4;
+    }
+    /* CV SECTION */
+
 /* ABOUT PAGE */
+
+
+
+
 
 
 
