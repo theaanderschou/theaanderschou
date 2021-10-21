@@ -43,7 +43,7 @@ a {
 
 h1 {
   font-family: sangbleulight;
-  font-size: clamp(1.5rem, 3.5vw, 2.5rem); 
+  font-size: clamp(1.5rem, 2.5vw, 2rem); 
 }
 
 h2 {
@@ -234,20 +234,16 @@ nav {
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .burger {
-      margin-right: 12%;
-    }
+    margin-right: 12%;
+}
 }
 
 @media only screen and (max-width: 500px) {
   .nav-active {
       width: 100%;
   }
-
-  .burger {
-      margin-right: 16%;
-    }
 }
 /* END OF NAV SECTION */
 
@@ -268,16 +264,10 @@ nav {
   transform: translateY(-50%);
 }  
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .logo {
-      margin-left: 12%;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-  .logo {
-      margin-left: 16%;
-    }
+    margin-left: 12%;
+  }
 }
 /* END OF LOGO SECTION */
 
@@ -570,10 +560,11 @@ footer {
     #about-hero {
       height: 60vh;
       width: 100%;
+      margin-top: 5%;
     }
 
     .about-hero-pic {
-      background-image: url(/img/glancing.jpg);
+      background-image: url(/img/glancing.png);
       background-size: 55%;
       background-repeat: no-repeat;
       background-position: right center;
@@ -586,8 +577,8 @@ footer {
     }
 
     .about-hero-textbox {
-      min-height: 100vh;
-      width: 45%;
+      height: 60vh;
+      width: 100%;
       display: flex;
       float: right;
       align-items: center;
@@ -597,52 +588,55 @@ footer {
     }
 
     .about-hero-text {
-      width: 100%;
-      text-align: left;
       position: absolute;
-      top: 15%;
+      top: 50%;
+      transform: translateY(-25%);
+      width: 100%;
     }
 
     .about-hero-textbox h1 {
       font-family: sangbleulight;
-      font-size: clamp(1.5rem, 5.5vw, 3.5rem); 
-      margin: 100px;
+      font-size: clamp(1.5rem, 3.5vw, 3rem); 
+      margin-left: 8%;
     }
 
-    @media only screen and (max-width: 950px) {
-      .about-hero-pic {
-        background-image: url(/img/bw-closedeyes.png);
-        background-size: 60%;
-        background-repeat: no-repeat;
-        background-position: center bottom;
-        position: absolute;
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        float: none;
-        transition: .25s ease-in;
+    @media only screen and (max-width: 1100px) {
+      #about-hero, .about-hero-pic, .about-hero-textbox {
+        height: 50vh;
       }
 
-      .about-hero-textbox {
-        min-height: 60vh;
-        width: 100%;
-        display: flex;
-        float: none;
-        align-items: center;
-      }
-
-      .about-hero-text {
-        text-align: center;
+      #about-hero {
+        margin-top: 2%;
       }
     }
 
-    @media only screen and (max-width: 750px) {
-      .about-hero-text {
-        margin-bottom: -100px;
+    @media only screen and (max-width: 1000px) {
+      .about-hero-textbox h1 {
+        margin-left: 12%;
       }
-      
     }
 
+    @media only screen and (max-width: 850px) {
+      #about-hero, .about-hero-pic, .about-hero-textbox {
+        height: 40vh;
+      }
+    }
+
+    @media only screen and (max-width: 570px) {
+      #about-hero, .about-hero-pic, .about-hero-textbox {
+        height: 30vh;
+      }
+    }
+
+    @media only screen and (max-width: 400px) {
+      #about-hero, .about-hero-pic, .about-hero-textbox {
+        height: 20vh;
+      }
+
+      #about-hero {
+        margin-top: 15%;
+      }
+    }
     /* ABOUT HERO SECTION */
 
 
@@ -664,14 +658,38 @@ footer {
       height: auto;
       width: 50%;
       margin: 0 auto;
-      padding: 12vh 100px 12vh 100px;
+      padding: 12vh 8% 12vh 8%;
+      float: left;
     }
     
     .about-facts {
       height: auto;
       width: 50%;
       margin: 0 auto;
-      padding: 12vh 100px 12vh 100px;
+      padding: 12vh 8% 12vh 8%;
+      float: right;
+    }
+
+    @media only screen and (max-width: 1000px) {
+      #about {
+        background-color: rgb(248, 248, 248);
+      }
+
+      .about {
+        display: block;
+      }
+
+      .about-text, .about-facts {
+        width: 100%;
+      }
+
+      .about-text {
+        padding: 6vh 12% 0vh 12%;
+      }
+      
+      .about-facts {
+        padding: 0vh 12% 6vh 12%;
+      }
     }
     /* ABOUT SECTION */
 
@@ -692,7 +710,6 @@ footer {
     }
 
     .cv {
-      display: flex;
       width: 100%;
       height: auto;
     }
@@ -701,16 +718,18 @@ footer {
       height: auto;
       width: 50%;
       margin: 0 auto;
-      padding: 12vh 100px 12vh 100px;
+      padding: 12vh 8% 12vh 8%;
+    }
+
+    .education {
+      float: left;
+    }
+
+    .experience {
+      float: right;
     }
     
-    .vertical-line {
-      width: 2px;
-      height: 500px;
-      background-color: #000000;
-      margin-top: 120px;
-      transition: all 0.3s ease;
-    }
+
 
     .education h1, .experience h1 {
       text-align: center;
@@ -719,6 +738,15 @@ footer {
 
     .cv-period {
       color: #b4b4b4;
+    }
+
+    @media only screen and (max-width: 1000px) {
+      .education, .experience {
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+        padding: 6vh 25% 6vh 25%;
+      }
     }
     /* CV SECTION */
 
