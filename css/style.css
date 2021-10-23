@@ -743,11 +743,17 @@ footer {
       height: auto;
     }
     
+    .cv-header {
+      text-align: center;
+      padding: 12vh 8% 0vh 8%;
+      font-size: clamp(1.5rem, 3.5vw, 3rem);
+    }
+
     .education, .experience {
       height: auto;
       width: 50%;
       margin: 0 auto;
-      padding: 12vh 8% 12vh 8%;
+      padding: 6vh 8% 12vh 8%;
     }
 
     .education {
