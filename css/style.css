@@ -254,7 +254,7 @@ nav {
   height: 8vh;
   padding: 8px 5px;
   margin-left: 8%;
-  z-index: 5;
+  z-index: 10;
 }
 
 .logo img {
@@ -402,25 +402,39 @@ nav {
 
 .quick-about-text {
   height: auto;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   padding: 12vh 8% 12vh 8%;
   float: left;
 }
 
 .quick-about-btn {
-  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  margin: 1vh auto 0vh auto;
+  border-radius: 45px;
+  background-color: #92c7b1;
+  box-shadow: 8px 11px 35px -5px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 8px 11px 35px -5px rgba(0,0,0,0.4);
+  -moz-box-shadow: 8px 11px 35px -5px rgba(0,0,0,0.4);  padding: 3%;
+}
+
+.quick-about-btn a {
+  text-transform: uppercase;
+  font-size: clamp(0.5rem, 1vw, 1rem);
+  color: #fff;
+  letter-spacing: 3px;
 }
 
 .quick-about-puppy {
   height: auto;
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
   float: right;
   background-image: url(/img/pics/bobby.png);
-  background-size: 55%;
+  background-size: 75%;
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: center bottom;
   transition: .25s ease-in;
 }
 
@@ -458,7 +472,7 @@ nav {
 .project-overview1, .project-overview2 {
   width: auto;
   height: auto;
-  margin: 100px 10%;
+  margin: 100px 8%;
 }
 
 .proj-pics {
