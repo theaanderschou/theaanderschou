@@ -484,6 +484,11 @@ nav {
   height: auto;
 }
 
+.project-overview1 h1 {
+  text-align: center;
+  padding-bottom: 6vh;
+}
+
 .project-overview1, .project-overview2 {
   width: auto;
   height: auto;
@@ -633,9 +638,8 @@ nav {
 
 
 
-/* ABOUT PAGE */
-    /* ABOUT HERO SECTION */
-    #about-hero {
+    /* SUB PAGE HERO SECTION */
+    #sub-hero {
       height: 60vh;
       width: 100%;
       margin-top: 5%;
@@ -654,7 +658,20 @@ nav {
       transition: .25s ease-in;
     }
 
-    .about-hero-textbox {
+    .work-hero-pic {
+      background-image: url(/img/pics/glancing.png);
+      background-size: 55%;
+      background-repeat: no-repeat;
+      background-position: right center;
+      position: absolute;
+      height: 60vh;
+      width: 100%;
+      display: flex;
+      float: right;
+      transition: .25s ease-in;
+    }
+
+    .sub-hero-textbox {
       height: 60vh;
       width: 100%;
       display: flex;
@@ -665,61 +682,61 @@ nav {
       z-index: 1;
     }
 
-    .about-hero-text {
+    .sub-hero-text {
       position: absolute;
       top: 50%;
       transform: translateY(-25%);
       width: 100%;
     }
 
-    .about-hero-textbox h1 {
+    .sub-hero-textbox h1 {
       font-family: sangbleulight;
       font-size: clamp(1.5rem, 3.5vw, 3rem); 
       margin-left: 8%;
     }
 
     @media only screen and (max-width: 1100px) {
-      #about-hero, .about-hero-pic, .about-hero-textbox {
+      #sub-hero, .about-hero-pic, .work-hero-pic, .sub-hero-textbox {
         height: 50vh;
       }
 
-      #about-hero {
+      #sub-hero {
         margin-top: 2%;
       }
     }
 
     @media only screen and (max-width: 1000px) {
-      .about-hero-textbox h1 {
+      .sub-hero-textbox h1 {
         margin-left: 12%;
       }
     }
 
     @media only screen and (max-width: 850px) {
-      #about-hero, .about-hero-pic, .about-hero-textbox {
+      #sub-hero, .about-hero-pic, .work-hero-pic, .sub-hero-textbox {
         height: 40vh;
       }
     }
 
     @media only screen and (max-width: 570px) {
-      #about-hero, .about-hero-pic, .about-hero-textbox {
+      #sub-hero, .about-hero-pic, .work-hero-pic, .sub-hero-textbox {
         height: 30vh;
       }
     }
 
     @media only screen and (max-width: 400px) {
-      #about-hero, .about-hero-pic, .about-hero-textbox {
+      #sub-hero, .about-hero-pic, .work-hero-pic, .sub-hero-textbox {
         height: 20vh;
       }
 
-      #about-hero {
+      #sub-hero {
         margin-top: 15%;
       }
     }
-    /* ABOUT HERO SECTION */
+    /* SUB PAGE HERO SECTION */
 
 
 
-
+/* ABOUT PAGE */
     /* ABOUT SECTION */
     #about {
       height: auto;
@@ -866,6 +883,103 @@ nav {
 
 
 
+/* WORK PAGE */
+#project1 {
+  width: 70%;
+  height: 200vh;
+  margin: 100px auto 0 auto;
+}
+
+.title {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.project-section {
+  width: 50%;
+  margin: 0 auto 0 auto;
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+
+.slider__container {
+  width: 500px;
+  margin: auto;
+  /*margin-top: 5rem;*/
+  overflow-x: hidden;
+  position: relative;
+}
+
+.slider__container img {
+  height: 800px;
+}
+
+.slider__container__sliders {
+    background: pink;
+    display: flex;
+    /*position: relative;*/
+    margin: 0;
+    padding: 0;
+  }
+
+  .leftBtn {
+    position: absolute;
+    top:50%;
+    left:0;
+    margin-left: 10px;
+    z-index: 100;
+  }
+
+.leftBtn::after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f137';
+  font-size: 2rem;
+  color: white;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.rightBtn {
+  position: absolute;
+  top:50%;
+  right:0;
+  margin-right: 10px;
+  z-index: 100;
+  }
+
+.rightBtn::after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f138';
+  font-size: 2rem;
+  color: white;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.project1-text {
+  width: 50%;
+  float: left;
+  margin-top: 180px;
+}
+
+.project1-text p {
+  width: 50%;
+  margin: 30px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.project1-text h2 {
+  width: 50%;
+  margin: auto;
+}
+/* WORK PAGE */
 
 
 
