@@ -677,6 +677,19 @@ nav {
       transition: .25s ease-in;
     }
 
+    .contact-hero-pic {
+      background-image: url(/img/drawings/gun.png);
+      background-size: 40%;
+      background-repeat: no-repeat;
+      background-position: right center;
+      position: absolute;
+      height: 60vh;
+      width: 100%;
+      display: flex;
+      float: right;
+      transition: .25s ease-in;
+    }
+
     .sub-hero-textbox {
       height: 60vh;
       width: 100%;
@@ -702,7 +715,7 @@ nav {
     }
 
     @media only screen and (max-width: 1100px) {
-      #sub-hero, .about-hero-pic, .work-hero-pic, .sub-hero-textbox {
+      #sub-hero, .about-hero-pic, .work-hero-pic, .contact-hero-pic, .sub-hero-textbox {
         height: 50vh;
       }
 
@@ -718,19 +731,19 @@ nav {
     }
 
     @media only screen and (max-width: 850px) {
-      #sub-hero, .about-hero-pic, .work-hero-pic, .sub-hero-textbox {
+      #sub-hero, .about-hero-pic, .work-hero-pic, .contact-hero-pic, .sub-hero-textbox {
         height: 40vh;
       }
     }
 
     @media only screen and (max-width: 570px) {
-      #sub-hero, .about-hero-pic, .work-hero-pic, .sub-hero-textbox {
+      #sub-hero, .about-hero-pic, .work-hero-pic, .contact-hero-pic, .sub-hero-textbox {
         height: 30vh;
       }
     }
 
     @media only screen and (max-width: 400px) {
-      #sub-hero, .about-hero-pic, .work-hero-pic, .sub-hero-textbox {
+      #sub-hero, .about-hero-pic, .work-hero-pic, .contact-hero-pic, .sub-hero-textbox {
         height: 20vh;
       }
 
@@ -947,11 +960,11 @@ nav {
   height: auto;
   padding: 12vh 8% 12vh 8%;
   background-color: teal;
-  position: absolute;
+  position: relative;
 }
 
 .title {
-  height: 10vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -960,8 +973,8 @@ nav {
 
 .project-section {
   width: 50%;
+  height: auto;
   margin: 0 auto;
-  overflow: hidden;
   position: relative;
   float: left;
 }
