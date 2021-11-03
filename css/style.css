@@ -504,7 +504,7 @@ nav {
 .freund-overview {
   width: 100%;
   display: flex;
-  margin: 40px 0;
+  margin: 50px 0 100px 0;
 }
 
 .freund-ov-pic {
@@ -524,7 +524,7 @@ nav {
 .td-overview {
   width: 100%;
   display: flex;
-  margin: 40px 0;
+  margin: 100px 0;
 }
 
 .td-ov-pic {
@@ -544,7 +544,7 @@ nav {
 .stormy-overview {
   width: 100%;
   display: flex;
-  margin: 40px 0;
+  margin: 100px 0;
 }
 
 .stormy-ov-pic {
@@ -1124,14 +1124,16 @@ form textarea {
 }
 
 form input {
-  height: 25px;
+  height: 30px;
   margin-bottom: 5px;
   padding-left: 10px;
+  font-size: clamp(1rem, .8vw, 1rem); 
 }
 
 form textarea {
   height: 150px;
   padding: 10px;
+  font-size: clamp(1rem, .8vw, 1rem); 
 }
 
 form button {
