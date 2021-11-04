@@ -1106,7 +1106,7 @@ footer a:hover {
 
   .projects {
     display: block;
-    height: 100vh;
+    height: 110vh;
   }
 
   .project-description {
@@ -1131,7 +1131,7 @@ footer a:hover {
 @media only screen and (max-width: 800px) {
   .projects {
     display: block;
-    height: 90vh;
+    height: 100vh;
   }
 }
 
