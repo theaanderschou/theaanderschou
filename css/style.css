@@ -65,6 +65,7 @@ p {
 }
 
 
+
 /* NAV SECTION */
 nav {
   display: flex;
@@ -742,7 +743,7 @@ footer a:hover {
     }
 
     .work-hero-pic {
-      background-image: url(/img/drawings/god.png);
+      background-image: url(/img/drawings/god.jpg);
       background-size: 55%;
       background-repeat: no-repeat;
       background-position: right center;
@@ -1143,6 +1144,31 @@ footer a:hover {
   float: right;
 }
 
+.project-showcase {
+  width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+  padding: 6vh 0 6vh 0;
+}
+
+.project-showcase h2 {
+  margin-bottom: 6vh;
+}
+
+.td-card {
+  width: 40%;
+}
+
+.border {
+  border: .1px solid rgb(184, 184, 184);
+}
+
+.p-link {
+  font-size: clamp(1rem, 1.2vw, 1.5rem); 
+  font-weight: 500;
+}
+
 @media only screen and (max-width: 1200px) {
   .project-hero img {
     width: 80%;
@@ -1173,6 +1199,11 @@ footer a:hover {
     width: 80%;
     float: none;
   }
+
+  .td-card {
+    width: 80%;
+  }
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -1180,28 +1211,17 @@ footer a:hover {
     display: block;
     height: 100vh;
   }
-}
 
-/*
-.projects {
-  width: 100%;
-  margin: 40px 0;
-}
+  .project-showcase {
+    margin-top: 12vh;
+  }
 
-.project-description {
-  width: 50%;
-  height: auto;
-  float: left;
-}
+  .td-logo {
+    width: 70%;
+  }
 
-.project-pic {
-  width: 50%;
-  height: auto;
-  float: right;
-  margin: auto;
-  padding: 0 8%;
-}
 
+}
 /* PROJECT PAGES */
 
 
