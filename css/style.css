@@ -307,7 +307,10 @@ nav {
   width: 60%;
   display: flex;
   float: left;
-  transition: .25s ease-in;}
+  transition: .25s ease-in;
+  bottom: 0;
+}
+  
 
 .hero-textbox {
   min-height: 100vh;
@@ -380,9 +383,12 @@ nav {
   .hero-text {
     margin-bottom: -100px;
   }
+  
+}
 
+@media only screen and (max-width: 400px) {
   .hero-pic, .hero-pic:hover {
-    height: 90vh;
+    top: 10vh;
   }
   
 }
