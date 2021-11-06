@@ -1269,15 +1269,15 @@ footer a:hover {
 @media only screen and (max-width: 400px) {
 .projects {
   display: block;
-  height: 115vh;
+  height: 125vh;
 }
 
 .stormy {
-  height: 140vh;
+  height: 155vh;
 }
 
 .project-showcase {
-  margin-top: 2vh;
+  margin-top: 4vh;
 }
 
 
