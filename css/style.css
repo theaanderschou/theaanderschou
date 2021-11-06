@@ -388,7 +388,7 @@ nav {
 
 @media only screen and (max-width: 400px) {
   .hero-pic, .hero-pic:hover {
-    top: 10vh;
+    top: 5vh;
   }
   
 }
