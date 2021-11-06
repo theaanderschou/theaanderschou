@@ -729,6 +729,10 @@ footer a:hover {
       margin-top: 5%;
     }
 
+    .contact-sub {
+      margin-bottom: 5vh;
+    }
+    
     .about-hero-pic {
       background-image: url(/img/pics/glancing.png);
       background-size: 55%;
@@ -845,6 +849,7 @@ footer a:hover {
       #sub-hero {
         margin-top: 15%;
       }
+
     }
     /* SUB PAGE HERO SECTION */
 
@@ -1205,6 +1210,8 @@ footer a:hover {
   font-weight: 500;
 }
 
+
+
 @media only screen and (max-width: 1200px) {
   .project-hero img {
     width: 80%;
@@ -1258,6 +1265,23 @@ footer a:hover {
 
 
 }
+
+@media only screen and (max-width: 400px) {
+.projects {
+  display: block;
+  height: 115vh;
+}
+
+.stormy {
+  height: 140vh;
+}
+
+.project-showcase {
+  margin-top: 2vh;
+}
+
+
+}
 /* PROJECT PAGES */
 
 
@@ -1268,7 +1292,7 @@ footer a:hover {
 
 /* CONTACT FORM */
 #contact {
-  height: 120vh;
+  height: 130vh;
   width: 100%;
   padding: 12vh 8% 12vh 8%;
   position: relative;
@@ -1300,7 +1324,7 @@ form {
   margin-bottom: 5vh;
 }
 
-.half-col {
+.half-col1, .half-col2 {
   width: 50%;
   height: 100%;
   position: relative;
@@ -1308,7 +1332,7 @@ form {
   overflow: hidden;
 }
 
-.half-col img {
+.half-col2 img {
   height: 70%;
   position: absolute;
   left: 60%;
@@ -1364,21 +1388,31 @@ button:hover {
 
 @media only screen and (max-width: 1100px) {
   #contact {
-    height: 200vh;
+    height: 250vh;
   }
 
-  .half-col {
+  .half-col1, .half-col2 {
     width: 100%;
     height: 50%;
   }
 
-  .half-col img {
+  .half-col2 img {
     height: 100%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     padding-top: 12vh;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #contact {
+    height: 210vh;
+  }
+
+  .half-col1 {
+    height: 55%;
   }
 }
 /* CONTACT FORM */
