@@ -380,6 +380,10 @@ nav {
   .hero-text {
     margin-bottom: -100px;
   }
+
+  .hero-pic, .hero-pic:hover {
+    height: 90vh;
+  }
   
 }
 
