@@ -982,12 +982,48 @@ footer a:hover {
       color: #b4b4b4;
     }
 
+    .about-btn{
+      width: 230px;
+      height: 60px;
+      text-align: center;
+      margin: 0vh auto 6vh auto;
+      border-radius: 45px;
+      box-shadow: 8px 11px 35px -5px rgba(0,0,0,0.4);
+      -webkit-box-shadow: 8px 11px 35px -5px rgba(0,0,0,0.4);
+      -moz-box-shadow: 8px 11px 35px -5px rgba(0,0,0,0.4);  
+      background-color: #a8a094;
+    }
+    
+    .about-btn a {
+      width: 100%;
+      height: 100%;
+      text-transform: uppercase;
+      color: #fff;
+      letter-spacing: 3px;
+      position: relative;
+      font-weight: 400;
+      top: 25%;
+    }
+    
+    .about-btn:hover {
+      background-color: #D0C6B8;
+    }
+
+    .btn-area {
+      background-color: rgb(248, 248, 248);
+      padding: 0vh 0 6vh 0;
+    }
+
     @media only screen and (max-width: 1000px) {
       .education, .experience {
         height: auto;
         width: 100%;
         margin: 0 auto;
         padding: 6vh 25% 6vh 25%;
+      }
+
+      .btn-area {
+        padding: 4vh 0 6vh 0;
       }
     }
     /* CV SECTION */
